@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/figuras.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="images/js.svg" type="image/x-icon">
+  <title>Figuras geométricas | Curso Práctico de JavaScript</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>
+        Figuras Geométricas
+      </h1>
+
+    </header>
+    <main>
+      <div class="figures">
+        <div class="figures-item">
+          <h2>Cuadrado</h2>
+          <img src="images/cuadrado.webp" alt="Imagen de un Cuadrado"/>
+          <form>
+            <label for="ladoCuadrado">Ingresa el tamaño de cada lado</label>
+            <input id="ladoCuadrado" type="number" placeholder="número">
+            <div class="card--buttons">
+              <button
+                type="button"
+                onclick="calcularAreaCuadrado()"
+              >
+                Área
+              </button>
+              <button
+                type="button"
+                onclick="calcularPerimetroCuadrado()"
+              >
+                Perímetro
+              </button>
+            </div>
+            <p class="card--form__subtitle">Resultado:</p>
+            <div class="card--form__result">
+              <p class="text-result" id="resultCuadrado"></p>
+            </div>
+          </form>
+        </div>
+
+        <div class="figures-item">
+          <h2>Triángulo</h2>
+          <img src="images/triangulo.webp" alt="Imagen de un Triangulo"/>
+          <form>
+            <label for="ladoAtriangulo">¿Cuánto mide un lado?</label>
+            <input type="number" placeholder="número" id="ladoAtriangulo"/>
+            <label for="ladoBTriangulo">¿Cuánto mide el otro lado??</label>
+            <input type="number" placeholder="número" id="ladoBTriangulo"/>
+            <label for="baseTriangulo">¿Cuánto mide la base?</label>
+            <input type="number" placeholder="número" id="baseTriangulo"/>
+            <div class="card--buttons">
+              <button
+                type="button"
+                onclick="calcularAreaTriangulo()"
+              >
+                Área
+              </button>
+              <button
+                type="button"
+                onclick="calcularPerimetroTriangulo()"
+              >
+                Perímetro
+              </button>
+            </div>
+            <p class="card--form__subtitle">Resultado:</p>
+            <div class="card--form__result">
+              <p class="text-result" id="resultTriangulo"></p>
+            </div>
+          </form>
+        </div>
+
+        <div class="figures-item">
+          <h2>Círculo</h2>
+          <img src="images/circulo.webp" alt="Imagen de un Circulo"/>
+          <form>
+            <label for="radioCirculo">¿Cuál es el radio?</label>
+            <input id="radioCirculo" type="number" placeholder="número">
+            <div class="card--buttons">
+              <button
+                type="button"
+                onclick="calcularAreaCirculo()"
+              >
+                Área
+              </button>
+              <button
+                type="button"
+                onclick="calcularCircunferencia()"
+              >
+                Circunferencia
+              </button>
+              <button
+                type="button"
+                onclick="calcularDiametro()"
+              >
+                Diametro
+            </button>
+            </div>
+            <p class="card--form__subtitle">Resultado:</p>
+            <div class="card--form__result">
+              <p class="text-result" id="resultCirulo"></p>
+            </div>
+          </form>
+        </div>
+
+        <div class="figures-item">
+          <h2>Triangulo Isósceles</h2>
+          <img src="images/trianguloIso.webp" alt="Imagen de un Triangulo"/>
+          <form>
+            <label for="isoLado1">¿Cuánto mide el primer lado?</label>
+            <input id="isoLado1" type="number" placeholder="número">
+            <label for="isoLado2">¿Cuánto mide el segundo lado?</label>
+            <input id="isoLado2" type="number" placeholder="número">
+            <label for="isoBase">¿Cuánto mide la base?</label>
+            <input id="isoBase" type="number" placeholder="número">
+            <div class="card--buttons">
+              <button
+                type="button"
+                onclick="calcularAlturaTrianguloIso()"
+              >
+                Altura
+              </button>
+            </div>
+            <p class="card--form__subtitle">Resultado:</p>
+            <div class="card--form__result">
+              <p class="text-result" id="resultTrianguloI"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="figuras.js"></script>
+</body>
+</html>
