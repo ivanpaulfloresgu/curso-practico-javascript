@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/descuentos.css">
+  <title>Porcentajes y descuentos | Curso Práctico de JavaScript</title>
+</head>
+<body>
+  <header >
+   
+  </header>
+
+  <main>
+    <div class="items">
+      <h2>Calcula el precio a pagar de tus productos con descuento</h2>
+      <div class="figuras-container">
+        <div class="card">
+          <p class="card__title">Precio con descuento</p>
+          <form action="" class="card--form">
+            <label for="InputPrice" class="card--form__subtitle"
+            >¿Cuál es el precio? 
+            </label>
+            <div class="div-Input-Cuadrado">
+              <input
+                type="number"
+                placeholder="Precio"
+                id="InputPrice"
+                class="input"
+              />
+            </div>
+            <label for="InputDiscount" class="card--form__subtitle"
+            >¿Cuál es el porcentaje de descuento? 
+            </label>
+            <div class="div-Input-Cuadrado">
+              <input
+                type="number"
+                placeholder="Descuento"
+                id="InputDiscount"
+                class="input"
+              />
+            </div>
+            <div>
+                <label for="cupones">Cupones: </label>
+                <select class="cupones" id="cupones">
+                <option value="0">No tengo</option>
+                <option value="10">-10%</option>
+                <option value="25">-25%</option>
+                <option value="50">-50%</option>
+                </select>
+            </div>
+            <div class="card--buttons">
+              <button
+                type="button"
+                class="button"
+                onclick="calcularPrecioConDescuento()"
+              >
+                Calcular precio con descuento
+              </button>
+            </div>
+            <p class="card--form__subtitle">Resultado:</p>
+            <div class="card--form__result">
+              <p class="text-result" id="resultDescuento"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./descuentos.js"></script>
+</body>
+</html>
