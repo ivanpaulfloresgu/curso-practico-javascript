@@ -33,7 +33,8 @@ function calcularPrecioConDescuento() {
   const precioConDescuento = formulaDescuento(priceValue, descuentoCupon);
 
   const resultDescuento = document.getElementById("resultDescuento");
-  resultDescuento.innerText = "El precio con descuento es: S/. " + precioConDescuento;
+  resultDescuento.innerText = "El descuento total es del : " +descuentoCupon+ "%\n El precio final es: S/. " + precioConDescuento ;
+  
 
   
 }
