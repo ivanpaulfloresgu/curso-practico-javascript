@@ -53,6 +53,31 @@ input {
   color: rgb(27, 12, 12);
 }
 
+.nav-options {
+  background: peru;
+  padding-top: 10px;
+}
+
+.nav-options ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 16px;
+}
+.nav-options ul a {
+  text-decoration: none;
+  font-size: 20px;
+  color: beige;
+}
+
+.nav-options ul a:hover {
+  color: rebeccapurple;
+}
+
+.nav-options ul .weAreHere a {
+  color: rebeccapurple;
+}
+
 .figuras-container{
   height: 88%;
   display: flex;

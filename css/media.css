@@ -18,6 +18,31 @@ input {
   outline: none;
 }
 
+.nav-options {
+  background: slateblue;
+  padding-top: 10px;
+}
+
+.nav-options ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 16px;
+}
+.nav-options ul a {
+  text-decoration: none;
+  font-size: 20px;
+  color: beige;
+}
+
+.nav-options ul a:hover {
+  color: tomato;
+}
+
+.nav-options ul .weAreHere a {
+  color: tomato;
+}
+
 .card {
   background-color: white;
   display: flex;
