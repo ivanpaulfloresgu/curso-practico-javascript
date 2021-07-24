@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/media.css">
+  <title>Promedio</title>
+</head>
+<body>
+  <header>
+  </header>
+  <main>
+    <div class="items">
+      <h2>Calcula la media, mediana y moda</h2>
+      <div class="figuras-container">
+        <div class="card">
+          <p class="card__title">Promedio, media y moda</p>
+          <form action="" class="card--form">
+            <label for="InputPrice" class="card--form__subtitle"
+            >Ingresa los datos
+            </label>
+            <div class="div-Input-Cuadrado">
+              <input
+                type="text"
+                placeholder="Ej: 2, 35, 135, 048"
+                id="datos"
+                class="input"
+              />
+            </div>
+            <div class="card--buttons">
+              <button
+                type="button"
+                class="button"
+                onclick="calcularMediaAritmetica()"
+              >
+                Media
+              </button>
+
+              <button
+                type="button"
+                class="button"
+                onclick="calcularMediana()"
+              >
+                Mediana
+              </button>
+
+              <button
+                type="button"
+                class="button"
+                onclick="calcularModa()"
+              >
+                Moda
+              </button>
+            </div>
+            <p class="card--form__subtitle">Resultado:</p>
+            <div class="card--form__result">
+              <p class="text-result" id="resultEstadistica"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="./media.js"></script>
+</body>
+</html>
