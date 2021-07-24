@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="images/js.svg" type="image/x-icon">
+  <link rel="stylesheet" href="css/media.css">
+  <title>Salarios</title>
+</head>
+<body>
+  <header>
+    <nav class="nav-options">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./figuras.html">Taller 1</a></li>
+        <li><a href="./descuentos.html">Taller 2</a></li>
+        <li><a href="./media.html">Taller 3</a></li>
+        <li class="weAreHere"><a href="#">Taller 4</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="items">
+      <h2>Calcula tus ganancias 😁</h2>
+      <div class="figuras-container">
+        <div class="card">
+          <p class="card__title">Salário</p>
+          <form action="" class="card--form">
+            <label for="inputIngreso" class="card--form__subtitle"
+            >¿Cuánto son tus ingresos?
+            </label>
+            <div class="div-Input-Cuadrado">
+              <input
+                type="number"
+                placeholder="Ej. S/. 5,000"
+                id="inputIngreso"
+                class="input"
+              />
+            </div>
+            <label for="inputGasto" class="card--form__subtitle"
+            >¿Cuánto son tus gastos?? 
+            </label>
+            <div class="div-Input-Cuadrado">
+              <input
+                type="number"
+                placeholder="Ej. S/. 3,000"
+                id="inputGasto"
+                class="input"
+              />
+            </div>
+            
+            <div class="card--buttons">
+              <button
+                type="button"
+                class="button"
+                onclick="getProfits()"
+              >
+                Calcular
+              </button>
+            </div>
+            <p class="card--form__subtitle">Resultado:</p>
+            <div class="card--form__result">
+              <p class="text-result" id="resultSalario"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./salarios.js"></script>
+  <script src="./analisis.js"></script>
+</body>
+</html>
